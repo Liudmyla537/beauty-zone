@@ -1,0 +1,26 @@
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--beauty-landing-2-c1);
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    transition: color 0.3s;
+  }
+
+  .link:hover {
+    font-weight: 600;
+    color: var(--beauty-landing-2-s2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .link {
+    font-size: 18px;
+  }
+
+  .link:hover {
+    font-weight: 700;
+  }
+}
