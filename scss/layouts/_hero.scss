@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
-  padding-top: 38px;
-  padding-bottom: 56px;
+  padding-top: 71px;
+  padding-bottom: 60px;
   background-image: linear-gradient(
       38deg,
       #fff 0%,
@@ -13,13 +13,9 @@
     url(../../images/hero-background-mob@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 310px;
   overflow: hidden;
-}
-
-.hero-container {
-  padding-top: 25px;
 }
 
 .hero-text {
@@ -57,6 +53,8 @@
   line-height: 1.64;
   text-align: center;
   color: var(--beauty-landing-2-c3);
+  width: 186px;
+  margin: 0 auto;
 }
 
 .hero-wave {
@@ -64,10 +62,87 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 60px;
+  overflow: hidden;
 }
 
 .hero-wave svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  transform: translateY(1px);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wave {
+    height: 120px;
+  }
+
+  .hero-section {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: linear-gradient(
+        94deg,
+        #fff 9.65%,
+        rgba(255, 255, 255, 0.85) 26.08%,
+        rgba(255, 255, 255, 0.19) 52.74%,
+        rgba(255, 255, 255, 0) 74.46%
+      ),
+      url(../../images/hero-background-desk.jpg),
+      url(../../images/hero-background-desk@2x.jpg);
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 330px;
+    margin-left: 50px;
+  }
+
+  .hero-text {
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+    margin-bottom: 40px;
+    line-height: 0.81;
+    text-align: left;
+  }
+
+  .button {
+    margin: 0 0 14px;
+  }
+
+  .hero-text-two {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    height: 687px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 140px;
+  }
+
+  .button {
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-size: 18px;
+  }
+
+  .hero-text-two {
+    font-size: 12px;
+    line-height: 1.5;
+    width: 238px;
+  }
 }
