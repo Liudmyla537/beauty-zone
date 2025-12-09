@@ -1,0 +1,138 @@
+.section-about {
+  position: relative;
+  margin-top: -30px;
+}
+
+.section-about-card {
+  display: none;
+}
+
+.section-about-title {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 24px;
+  width: 255px;
+}
+
+.section-about-span.title,
+.section-about-span.text {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.section-about-span.title {
+  color: var(--beauty-landing-2-s2);
+}
+
+.section-about-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.section-about-text.first {
+  margin-bottom: 16px;
+}
+
+.section-about-text.second {
+  margin-bottom: 6px;
+}
+
+.star.star-blue {
+  position: absolute;
+  bottom: -50px;
+  right: 40px;
+  fill: var(--beauty-landing-2-c6);
+}
+
+.star.star-lightblue,
+.star.star-lightgrey {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-about {
+    gap: 32px;
+  }
+  .section-about-writing {
+    width: 360px;
+  }
+
+  .section-about-title {
+    width: 100%;
+  }
+
+  .section-about-card {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    gap: 60px;
+    width: 300px;
+  }
+
+  .card-facelift {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .card-facelift.after {
+    align-self: flex-end;
+  }
+
+  .star.star-lightblue {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: block;
+    fill: var(--beauty-landing-2-s2);
+  }
+
+  .star.star-lightgrey {
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    display: block;
+    fill: var(--beauty-landing-2-s5);
+  }
+
+  .star.star-blue {
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-about-writing {
+    width: 530px;
+  }
+
+  .section-about-card {
+    top: -10%;
+    right: 0;
+    left: 60%;
+    width: 360px;
+    gap: 40px;
+  }
+
+  .card-facelift {
+    width: 227px;
+    height: 227px;
+  }
+
+  .star.star-lightblue {
+    top: 10%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .star.star-blue {
+    top: 70%;
+  }
+}
