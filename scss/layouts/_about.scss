@@ -9,6 +9,7 @@
 .section-about-title {
   font-weight: 500;
   font-size: 32px;
+  line-height: 1.1;
   margin-bottom: 24px;
   width: 255px;
 }
@@ -36,15 +37,10 @@
   content: "";
   position: absolute;
   right: 20px;
-  bottom: -70px;
+  bottom: -50px;
   background-image: url(../images/star-dark-blue.svg);
-  width: 40px;
-  height: 40px;
-}
-
-.star.star-lightblue,
-.star.star-lightgrey {
-  display: none;
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (min-width: 768px) {
