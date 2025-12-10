@@ -10,7 +10,6 @@
   }
 
   .link:hover {
-    font-weight: 600;
     color: var(--beauty-landing-2-s2);
   }
 }
@@ -18,9 +17,5 @@
 @media screen and (min-width: 1280px) {
   .link {
     font-size: 18px;
-  }
-
-  .link:hover {
-    font-weight: 700;
   }
 }

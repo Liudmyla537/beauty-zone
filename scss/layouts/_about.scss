@@ -1,6 +1,5 @@
 .section-about {
   position: relative;
-  margin-top: -30px;
 }
 
 .section-about-card {
@@ -14,13 +13,13 @@
   width: 255px;
 }
 
-.section-about-span.title,
-.section-about-span.text {
+.accent.title,
+.accent.text {
   text-transform: capitalize;
   font-weight: 700;
 }
 
-.section-about-span.title {
+.accent.title {
   color: var(--beauty-landing-2-s2);
 }
 
@@ -33,15 +32,14 @@
   margin-bottom: 16px;
 }
 
-.section-about-text.second {
-  margin-bottom: 6px;
-}
-
-.star.star-blue {
+.section-about::after {
+  content: "";
   position: absolute;
-  bottom: -50px;
-  right: 40px;
-  fill: var(--beauty-landing-2-c6);
+  right: 20px;
+  bottom: -70px;
+  background-image: url(../../images/star-dark-blue.svg);
+  width: 40px;
+  height: 40px;
 }
 
 .star.star-lightblue,
@@ -51,20 +49,24 @@
 
 @media screen and (min-width: 768px) {
   .container-about {
+    display: flex;
     gap: 32px;
   }
+
+  .section-about {
+    margin-top: -50px;
+  }
   .section-about-writing {
-    width: 360px;
+    width: 415px;
   }
 
   .section-about-title {
+    padding-top: 20px;
     width: 100%;
   }
 
   .section-about-card {
-    position: absolute;
-    top: -30px;
-    right: 30px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,40 +85,69 @@
     align-self: flex-end;
   }
 
-  .star.star-lightblue {
+  .card-facelift.before {
+    position: relative;
+  }
+
+  .section-about::after {
+    display: none;
+  }
+
+  .section-about-card::before {
+    content: "";
     position: absolute;
     top: 10%;
-    right: 10%;
-    display: block;
-    fill: var(--beauty-landing-2-s2);
+    right: 8%;
+    background-image: url(../../images/star-light-blue.svg);
+    width: 25px;
+    height: 25px;
   }
 
-  .star.star-lightgrey {
+  .section-about-card::after {
+    content: "";
     position: absolute;
-    top: 40%;
-    right: 12%;
-    display: block;
-    fill: var(--beauty-landing-2-s5);
+    top: 53%;
+    right: 54%;
+    background-image: url(../../images/star-dark-blue.svg);
+    fill: var(--beauty-landing-2-c6);
+    width: 40px;
+    height: 40px;
   }
 
-  .star.star-blue {
-    top: 50%;
-    bottom: 0;
-    right: 0;
-    left: 60%;
+  .section-about-star::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    background-image: url(../../images/star-grey.svg);
+    width: 15px;
+    height: 15px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section-about-writing {
-    width: 530px;
+    width: 660px;
+  }
+
+  .section-about-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+
+  .section-about-text {
+    font-size: 22px;
+    line-height: 1.72;
+  }
+
+  .section-about-text.first {
+    margin-bottom: 40px;
   }
 
   .section-about-card {
-    top: -10%;
-    right: 0;
-    left: 60%;
-    width: 360px;
+    width: 400px;
     gap: 40px;
   }
 
@@ -125,14 +156,18 @@
     height: 227px;
   }
 
-  .star.star-lightblue {
-    top: 10%;
-    right: 10%;
-    width: 40px;
-    height: 40px;
+  .section-about-card::before {
+    width: 35px;
+    height: 35px;
   }
 
-  .star.star-blue {
-    top: 70%;
+  .section-about-card::after {
+    width: 56px;
+    height: 56px;
+  }
+
+  .section-about-star::after {
+    width: 16px;
+    height: 16px;
   }
 }
