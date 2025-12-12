@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   position: relative;
   padding-top: 71px;
   padding-bottom: 60px;
@@ -11,14 +11,14 @@
   overflow: hidden;
 }
 
-.hero-text {
+.hero__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   font-family: var(--third-family);
   text-transform: capitalize;
   font-weight: 700;
@@ -40,7 +40,7 @@
   margin: 0 auto 8px;
 }
 
-.hero-text-two {
+.hero__subtitle {
   font-weight: 400;
   font-size: 11px;
   line-height: 1.64;
@@ -51,18 +51,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-wave {
-    height: 120px;
-  }
-
-  .hero-section {
+  .hero {
     padding-top: 125px;
     padding-bottom: 125px;
     background-image: url(../images/hero-background-desk.png),
       url(../images/hero-background-desk@2x.png);
   }
 
-  .hero-container {
+  .hero__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,11 +67,11 @@
     margin-left: 50px;
   }
 
-  .hero-text {
+  .hero__text {
     margin-bottom: 16px;
   }
 
-  .hero-title {
+  .hero__title {
     font-size: 70px;
     margin-bottom: 40px;
     line-height: 0.81;
@@ -86,22 +82,21 @@
     margin: 0 0 14px;
   }
 
-  .hero-text-two {
+  .hero__subtitle {
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-section {
+  .hero {
     min-height: 687px;
-    // height: 100vh;
   }
 
-  .hero-text {
+  .hero__text {
     font-size: 18px;
   }
 
-  .hero-title {
+  .hero__title {
     font-size: 140px;
   }
 
@@ -111,7 +106,7 @@
     font-size: 18px;
   }
 
-  .hero-text-two {
+  .hero__subtitle {
     font-size: 12px;
     line-height: 1.5;
     width: 238px;

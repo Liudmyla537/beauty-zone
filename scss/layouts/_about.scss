@@ -1,12 +1,12 @@
-.section-about {
+.about {
   position: relative;
 }
 
-.section-about-card {
+.about__card {
   display: none;
 }
 
-.section-about-title {
+.about__title {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.1;
@@ -14,26 +14,22 @@
   width: 255px;
 }
 
-.accent.title,
-.accent.text {
+.accent.about__accent {
   text-transform: capitalize;
   font-weight: 700;
-}
-
-.accent.title {
   color: var(--beauty-landing-2-s2);
 }
 
-.section-about-text {
+.about__text {
   font-weight: 400;
   font-size: 18px;
 }
 
-.section-about-text.first {
+.about__text--first {
   margin-bottom: 16px;
 }
 
-.section-about::after {
+.about::after {
   content: "";
   position: absolute;
   right: 20px;
@@ -44,24 +40,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-about {
+  .about__container {
     display: flex;
     gap: 32px;
   }
 
-  .section-about {
+  .about {
     margin-top: -50px;
   }
-  .section-about-writing {
+
+  .about__content {
     width: 415px;
   }
 
-  .section-about-title {
+  .about__title {
     padding-top: 20px;
     width: 100%;
   }
 
-  .section-about-card {
+  .about__card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -71,25 +68,25 @@
     width: 300px;
   }
 
-  .card-facelift {
+  .about__image {
     border-radius: 50%;
     width: 200px;
     height: 200px;
   }
 
-  .card-facelift.after {
+  .about__image--after {
     align-self: flex-end;
   }
 
-  .card-facelift.before {
+  .about__image--before {
     position: relative;
   }
 
-  .section-about::after {
+  .about::after {
     display: none;
   }
 
-  .section-about-card::before {
+  .about__card::before {
     content: "";
     position: absolute;
     top: 10%;
@@ -99,7 +96,7 @@
     height: 25px;
   }
 
-  .section-about-card::after {
+  .about__card::after {
     content: "";
     position: absolute;
     top: 53%;
@@ -110,7 +107,7 @@
     height: 40px;
   }
 
-  .section-about-star::after {
+  .about__star::after {
     content: "";
     position: absolute;
     top: 35%;
@@ -122,47 +119,47 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section-about-writing {
+  .about__content {
     width: 660px;
   }
 
-  .section-about-title {
+  .about__title {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.1;
     margin-bottom: 40px;
   }
 
-  .section-about-text {
+  .about__text {
     font-size: 22px;
     line-height: 1.72;
   }
 
-  .section-about-text.first {
+  .about__text--first {
     margin-bottom: 40px;
   }
 
-  .section-about-card {
+  .about__card {
     width: 400px;
     gap: 40px;
   }
 
-  .card-facelift {
+  .about__image {
     width: 227px;
     height: 227px;
   }
 
-  .section-about-card::before {
+  .about__card::before {
     width: 35px;
     height: 35px;
   }
 
-  .section-about-card::after {
+  .about__card::after {
     width: 56px;
     height: 56px;
   }
 
-  .section-about-star::after {
+  .about__star::after {
     width: 16px;
     height: 16px;
   }

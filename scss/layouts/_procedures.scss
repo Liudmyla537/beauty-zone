@@ -1,0 +1,109 @@
+.procedures {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.procedures__title {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.procedures__accent {
+  font-weight: 700;
+  color: var(--beauty-landing-2-s2);
+}
+
+.procedures__btn {
+  display: none;
+}
+
+.procedures__slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedures__card {
+  overflow: hidden;
+  width: 100%;
+
+  // Стилі для Swiper
+  &.swiper {
+    overflow: hidden; // Залишаємо hidden для коректної роботи Swiper
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+    // Swiper сам додає display: flex
+  }
+
+  .swiper-slide {
+    height: auto;
+    box-sizing: border-box;
+    // Swiper сам керує шириною та display слайдів
+  }
+
+  // Переконатися, що картки всередині слайдів мають правильну ширину
+  .procedures__item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.procedures__image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 416px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+  border-radius: 4px 120px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.procedures__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.procedures__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--beauty-landing-2-background);
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .procedures__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    fill: var(--beauty-landing-2-background);
+    border: 1px solid var(--beauty-landing-2-c1);
+    stroke: var(--beauty-landing-2-c1);
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
