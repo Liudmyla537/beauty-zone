@@ -4,85 +4,83 @@
   left: 0;
   width: 100%;
   z-index: 100;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 16px;
-}
-
-.header__menu {
-  display: none;
-}
-
-.header__address-list {
-  display: none;
-}
-
-.header__burger {
-  border: none;
-  background-color: transparent;
-  fill: var(--beauty-landing-2-background);
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.25);
-  }
-
-  .header__container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .header__nav {
+  &__container {
     display: flex;
     align-items: center;
-    gap: 40px;
-    flex-grow: 1;
+    justify-content: space-between;
+    padding-top: 16px;
   }
 
-  .header__menu {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 24px;
+  &__menu {
+    display: none;
   }
 
-  .header__address-list {
-    display: flex;
-    gap: 16px;
+  &__address-list {
+    display: none;
   }
 
-  .header__address-item {
-    width: 32px;
-    height: 32px;
-  }
-
-  .header__address-icon {
-    transition: fill 0.3s;
-  }
-
-  .header__address-icon:hover {
-    font-weight: 600;
+  &__burger {
+    border: none;
+    background-color: transparent;
     fill: var(--beauty-landing-2-background);
   }
 
-  .header__burger {
-    display: none;
-  }
-}
+  @media screen and (min-width: 768px) {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
 
-@media screen and (min-width: 1280px) {
-  .header__container {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    &__container {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-grow: 1;
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 24px;
+    }
+
+    &__address-list {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__address-item {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__address-icon {
+      transition: fill 0.3s;
+
+      &:hover {
+        font-weight: 600;
+        fill: var(--beauty-landing-2-background);
+      }
+    }
+
+    &__burger {
+      display: none;
+    }
   }
 
-  .header__menu {
-    gap: 56px;
+  @media screen and (min-width: 1280px) {
+    &__container {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__menu {
+      gap: 56px;
+    }
   }
 }

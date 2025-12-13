@@ -1,166 +1,168 @@
 .about {
   position: relative;
-}
 
-.about__card {
-  display: none;
-}
+  &__card {
+    display: none;
+  }
 
-.about__title {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-  width: 255px;
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    width: 255px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+
+    &--first {
+      margin-bottom: 16px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    background-image: url(../images/star-dark-blue.svg);
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: -50px;
+
+    &__container {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__content {
+      width: 415px;
+    }
+
+    &__title {
+      padding-top: 20px;
+      width: 100%;
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      gap: 60px;
+      width: 300px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 8%;
+        background-image: url(../images/star-light-blue.svg);
+        width: 25px;
+        height: 25px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 53%;
+        right: 54%;
+        background-image: url(../images/star-dark-blue.svg);
+        fill: var(--beauty-landing-2-c6);
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__image {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+
+      &--after {
+        align-self: flex-end;
+      }
+
+      &--before {
+        position: relative;
+      }
+    }
+
+    &__star {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: 85%;
+        background-image: url(../images/star-grey.svg);
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__content {
+      width: 660px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 22px;
+      line-height: 1.72;
+
+      &--first {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__card {
+      width: 400px;
+      gap: 40px;
+
+      &::before {
+        width: 35px;
+        height: 35px;
+      }
+
+      &::after {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &__image {
+      width: 227px;
+      height: 227px;
+    }
+
+    &__star {
+      &::after {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
 }
 
 .accent.about__accent {
   text-transform: capitalize;
   font-weight: 700;
   color: var(--beauty-landing-2-s2);
-}
-
-.about__text {
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.about__text--first {
-  margin-bottom: 16px;
-}
-
-.about::after {
-  content: "";
-  position: absolute;
-  right: 20px;
-  bottom: -50px;
-  background-image: url(../images/star-dark-blue.svg);
-  width: 30px;
-  height: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .about__container {
-    display: flex;
-    gap: 32px;
-  }
-
-  .about {
-    margin-top: -50px;
-  }
-
-  .about__content {
-    width: 415px;
-  }
-
-  .about__title {
-    padding-top: 20px;
-    width: 100%;
-  }
-
-  .about__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    gap: 60px;
-    width: 300px;
-  }
-
-  .about__image {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
-
-  .about__image--after {
-    align-self: flex-end;
-  }
-
-  .about__image--before {
-    position: relative;
-  }
-
-  .about::after {
-    display: none;
-  }
-
-  .about__card::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    right: 8%;
-    background-image: url(../images/star-light-blue.svg);
-    width: 25px;
-    height: 25px;
-  }
-
-  .about__card::after {
-    content: "";
-    position: absolute;
-    top: 53%;
-    right: 54%;
-    background-image: url(../images/star-dark-blue.svg);
-    fill: var(--beauty-landing-2-c6);
-    width: 40px;
-    height: 40px;
-  }
-
-  .about__star::after {
-    content: "";
-    position: absolute;
-    top: 35%;
-    left: 85%;
-    background-image: url(../images/star-grey.svg);
-    width: 15px;
-    height: 15px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .about__content {
-    width: 660px;
-  }
-
-  .about__title {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.1;
-    margin-bottom: 40px;
-  }
-
-  .about__text {
-    font-size: 22px;
-    line-height: 1.72;
-  }
-
-  .about__text--first {
-    margin-bottom: 40px;
-  }
-
-  .about__card {
-    width: 400px;
-    gap: 40px;
-  }
-
-  .about__image {
-    width: 227px;
-    height: 227px;
-  }
-
-  .about__card::before {
-    width: 35px;
-    height: 35px;
-  }
-
-  .about__card::after {
-    width: 56px;
-    height: 56px;
-  }
-
-  .about__star::after {
-    width: 16px;
-    height: 16px;
-  }
 }

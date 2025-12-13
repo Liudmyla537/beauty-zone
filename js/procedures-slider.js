@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
       pagination: {
         el: ".pagination",
         clickable: true,
-        bulletClass: "pagination-button",
-        bulletActiveClass: "pagination-button-active",
+        bulletClass: "pagination__button",
+        bulletActiveClass: "pagination__button--active",
       },
       navigation: {
         nextEl: ".procedures__btn--next",

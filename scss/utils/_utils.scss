@@ -7,7 +7,16 @@
   --beauty-landing-2-s5: #747272;
   --beauty-landing-2-c6: #011f4a;
 
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Poppins", sans-serif;
-  --third-family: "Play", sans-serif;
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Poppins', sans-serif;
+  --third-family: 'Play', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

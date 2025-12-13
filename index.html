@@ -97,17 +97,20 @@
           </h2>
           <p class="about__text about__text--first">Наша косметологічна клініка пропонує вам професійні послуги
             з догляду за шкірою обличчя та тіла.</p>
-          <p class="about__text about__text--second">B <span class="accent about__accent">beauty zone</span> ми гарантуємо
+          <p class="about__text about__text--second">B <span class="accent about__accent">beauty zone</span> ми
+            гарантуємо
             найвищі стандарти якості
             та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та
             молодість.<br>З нами краса назавжди!</p>
         </div>
         <div class="about__card">
           <div class="about__star"></div>
-          <img class="about__image about__image--before" srcset="./images/before-facelift.jpg 1x, ./images/before-facelift@2x.jpg 2x"
+          <img class="about__image about__image--before"
+            srcset="./images/before-facelift.jpg 1x, ./images/before-facelift@2x.jpg 2x"
             src="./images/before-facelift.jpg" alt="Обличчя до процедури">
-          <img class="about__image about__image--after" srcset="./images/after-facelift.jpg 1x, ./images/after-facelift@2x.jpg 2x"
-            src="./images/after-facelift.jpg" alt="Обличчя після процедури">
+          <img class="about__image about__image--after"
+            srcset="./images/after-facelift.jpg 1x, ./images/after-facelift@2x.jpg 2x" src="./images/after-facelift.jpg"
+            alt="Обличчя після процедури">
         </div>
       </div>
     </div>
@@ -203,9 +206,9 @@
                 </li>
               </ul>
               <div class="pagination">
-                <span class="pagination-button"></span>
-                <span class="pagination-button"></span>
-                <span class="pagination-button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
               </div>
             </div>
             <button class="procedures__btn procedures__btn--next" type="button">
@@ -220,6 +223,51 @@
 
     <!-- #endregion Procedures -->
   </div>
+
+  <!-- #region Contacts -->
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__container">
+        <div class="contacts__form">
+          <h2 class="contacts__title">Як нас <span class="contacts__accent">знайти</span></h2>
+          <div class="contacts__form-map">
+            <form class="form" name="contact-form" autocomplete="off">
+              <h3 class="form__title">Запишіться <span class="form__accent">безкоштовно</span> та отримайте подарунок
+              </h3>
+              <div class="form__field">
+                <label class="form__label visually-hidden" for="name">Ваше ім'я та прізвище</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Ваше ім'я та прізвище"
+                  required>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label visually-hidden" for="tel">Ваш номер телефону</label>
+                <input class="form__input" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону" required>
+              </div>
+
+              <div class="form__field">
+                <label class="form__label visually-hidden" for="email">Ваша електронна пошта</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="Ваша електронна пошта"
+                  required>
+              </div>
+
+              <button class="button form__button" type="submit">Записатись безкоштовно</button>
+              <p class="form__terms">Натискаючи на кнопку я погоджуюсь <a class="form__link" href="#" target="_blank">з
+                  політикою конфіденційності</a></p>
+            </form>
+
+            <iframe class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1765549873256!5m2!1sru!2sua"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #endregion Contacts -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
