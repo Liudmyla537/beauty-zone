@@ -74,6 +74,13 @@
 
     @media screen and (min-width: 768px) {
       width: 310px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border: 2px solid var(--beauty-landing-2-s5);
+        background-color: var(--beauty-landing-2-s5);
+      }
     }
 
     @media screen and (min-width: 1280px) {

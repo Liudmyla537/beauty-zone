@@ -4,15 +4,55 @@
   position: relative;
   z-index: 2;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 32px;
     text-align: center;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 1280px) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+    }
   }
 
   &__btn {
     display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 0;
+      color: var(--beauty-landing-2-c1);
+      border: 1px solid var(--beauty-landing-2-c1);
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--beauty-landing-2-s2);
+        border: none;
+        color: var(--beauty-landing-2-background);
+      }
+    }
+  }
+  &__icon {
+    fill: currentColor;
   }
 
   &__slider {
@@ -25,23 +65,19 @@
     overflow: hidden;
     width: 100%;
 
-    // Стилі для Swiper
     &.swiper {
-      overflow: hidden; // Залишаємо hidden для коректної роботи Swiper
+      overflow: hidden;
     }
 
     .swiper-wrapper {
       box-sizing: border-box;
-      // Swiper сам додає display: flex
     }
 
     .swiper-slide {
       height: auto;
       box-sizing: border-box;
-      // Swiper сам керує шириною та display слайдів
     }
 
-    // Переконатися, що картки всередині слайдів мають правильну ширину
     .procedures__item {
       width: 100%;
       height: 100%;
@@ -82,38 +118,6 @@
     text-align: center;
     color: var(--beauty-landing-2-background);
     padding-bottom: 24px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    &__btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      padding: 0;
-      fill: var(--beauty-landing-2-background);
-      border: 1px solid var(--beauty-landing-2-c1);
-      stroke: var(--beauty-landing-2-c1);
-      background-color: transparent;
-      cursor: pointer;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-
-    &__title {
-      font-weight: 700;
-      font-size: 64px;
-      margin-bottom: 48px;
-    }
   }
 }
 

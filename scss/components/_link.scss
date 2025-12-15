@@ -15,3 +15,29 @@
     font-size: 18px;
   }
 }
+
+.footer {
+  &__menu-link {
+    display: block;
+    color: var(--beauty-landing-2-background);
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+  &__address-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--beauty-landing-2-background);
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+}

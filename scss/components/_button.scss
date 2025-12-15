@@ -10,6 +10,12 @@
 
   @media screen and (min-width: 768px) {
     margin: 0 0 14px;
+
+    &:hover {
+      border: 2px solid var(--beauty-landing-2-s2);
+      background-color: transparent;
+      color: var(--beauty-landing-2-c1);
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -35,6 +41,12 @@
       padding-right: 24px;
       width: 260px;
       margin-bottom: 8px;
+
+      &:hover {
+        border: 2px solid var(--beauty-landing-2-s2);
+        background-color: transparent;
+        color: var(--beauty-landing-2-background);
+      }
     }
 
     @media screen and (min-width: 1280px) {
