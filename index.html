@@ -349,8 +349,9 @@
         </h3>
         <div class="form__field">
           <label class="form__label visually-hidden" for="name">Ваше ім'я та прізвище</label>
-          <input class="form__input" type="text" id="name" name="name" pattern="[A-zА-я']{1,} [A-zА-я']{1,}"
-            title="Іван Іванов" placeholder="Ваше ім'я та прізвище" required>
+          <input class="form__input" type="text" id="name" name="name"
+            pattern="^[А-ЯҐЄІЇОУ][а-яґєіїоу']*\s[А-ЯҐЄІЇОУ][а-яґєіїоу']*$" title="Іван Іванов"
+            placeholder="Ваше ім'я та прізвище" required>
         </div>
         <div class="form__field">
           <label class="form__label visually-hidden" for="tel">Ваш номер телефону</label>

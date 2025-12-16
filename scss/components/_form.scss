@@ -72,14 +72,31 @@
       color: var(--beauty-landing-2-background);
     }
 
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 1000px transparent inset;
+      -webkit-text-fill-color: var(--beauty-landing-2-background);
+      transition: background-color 9999s ease-in-out 0s;
+    }
+
     @media screen and (min-width: 768px) {
       width: 310px;
 
-      &:hover,
-      &:focus,
-      &:active {
+      &:hover {
         border: 2px solid var(--beauty-landing-2-s5);
         background-color: var(--beauty-landing-2-s5);
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+
+      &:not(:placeholder-shown) {
+        background-color: transparent;
+        color: var(--beauty-landing-2-background);
       }
     }
 
