@@ -36,6 +36,14 @@
     font-size: 14px;
     color: var(--beauty-landing-2-background);
 
+    @media screen and (min-width: 768px) {
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--beauty-landing-2-s2);
+      }
+    }
+
     @media screen and (min-width: 1280px) {
       font-size: 16px;
     }

@@ -59,11 +59,10 @@
       height: 32px;
     }
 
-    &__address-icon {
+    &__address-link {
       transition: fill 0.3s;
 
       &:hover {
-        font-weight: 600;
         fill: var(--beauty-landing-2-background);
       }
     }

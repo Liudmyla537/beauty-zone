@@ -21,16 +21,16 @@
           </a>
           <ul class="header__menu">
             <li>
-              <a class="link" href="#">Про нас</a>
+              <a class="link" href="#about">Про нас</a>
             </li>
             <li>
-              <a class="link" href="#">Чому ми</a>
+              <a class="link" href="#advantages">Чому ми</a>
             </li>
             <li>
-              <a class="link" href="#">Наші процедури</a>
+              <a class="link" href="#procedures">Наші процедури</a>
             </li>
             <li>
-              <a class="link" href="#">Контакти</a>
+              <a class="link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +38,7 @@
         <address class="header__address">
           <ul class="header__address-list">
             <li class="header__address-item">
-              <a href="#">
+              <a class="header__address-link" href="#">
                 <svg class="header__address-icon" width="32" height="32">
                   <use href="./images/symbol-defs.svg#icon-telephone"></use>
                 </svg>
@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="header__address-item">
-              <a href="#">
+              <a class="header__address-link" href="#" target="_blank">
                 <svg class="header__address-icon" width="32" height="32">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
@@ -78,7 +78,7 @@
       <div class="hero__container">
         <p class="hero__text">Косметологічна клініка</p>
         <h1 class="hero__title">beauty zone</h1>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <button class="button" type="button" data-modal-open>Замовити дзвінок</button>
         <p class="hero__subtitle">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </div>
     </div>
@@ -88,7 +88,7 @@
 
   <!-- #region About -->
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__container">
         <div class="about__content">
@@ -121,7 +121,7 @@
   <div class="bg-wave">
     <!-- #region Advantages -->
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <div class="advantages__container">
           <h2 class="advantages__title">Чому люди <span class="accent advantages__accent">обирають нас</span></h2>
@@ -160,7 +160,7 @@
     <!-- #endregion Advantages -->
 
     <!-- #region Procedures -->
-    <section class="procedures">
+    <section class="procedures" id="procedures">
       <div class="container">
         <div class="procedures__container">
           <h2 class="procedures__title">Наші <span class="accent procedures__accent">процедури</span></h2>
@@ -226,7 +226,7 @@
 
   <!-- #region Contacts -->
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <div class="contacts__container">
         <div class="contacts__form">
@@ -279,10 +279,10 @@
             </a>
           </div>
           <ul class="footer__menu">
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="">Про нас</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="">Чому ми</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="">Наші процедури</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="">Контакти</a></li>
+            <li class="footer__menu-item"><a class="link footer__menu-link" href="#about">Про нас</a></li>
+            <li class="footer__menu-item"><a class="link footer__menu-link" href="#advantages">Чому ми</a></li>
+            <li class="footer__menu-item"><a class="link footer__menu-link" href="#procedures">Наші процедури</a></li>
+            <li class="footer__menu-item"><a class="link footer__menu-link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
         <address class="footer__address">
@@ -334,9 +334,49 @@
     </div>
   </footer>
 
+  <!-- #region Modal -->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal__close-btn" type="button" data-modal-close>
+        <svg class="modal__close-icon" width="32" height="32">
+          <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Замовити дзвінок</h2>
+
+      <form class="modal__form" name="modal-form">
+        <h3 class="modal__form-title">Запишіться <span class="form__accent">безкоштовно</span> та отримайте подарунок
+        </h3>
+        <div class="form__field">
+          <label class="form__label visually-hidden" for="name">Ваше ім'я та прізвище</label>
+          <input class="form__input" type="text" id="name" name="name" pattern="[A-zА-я']{1,} [A-zА-я']{1,}"
+            title="Іван Іванов" placeholder="Ваше ім'я та прізвище" required>
+        </div>
+        <div class="form__field">
+          <label class="form__label visually-hidden" for="tel">Ваш номер телефону</label>
+          <input class="form__input" type="tel" id="tel" name="tel" pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            title="+38-000-000-00-00" placeholder="Ваш номер телефону" required>
+        </div>
+        <div class="form__field">
+          <label class="form__label visually-hidden" for="email">Ваша електронна пошта</label>
+          <input class="form__input" type="email" id="email" name="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}" title="usermail@gmail.com"
+            placeholder="Ваша електронна пошта" required>
+        </div>
+        <button class="button form__button" type="submit">Записатись безкоштовно</button>
+        <p class="form__terms">Натискаючи на кнопку я погоджуюсь <a class="form__link" href="#" target="_blank">з
+            політикою конфіденційності</a></p>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- #endregion Modal -->
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
   <script src="./js/procedures-slider.js"></script>
+  <script src="./js/modal.js"></script>
 
 </body>
 
