@@ -1,0 +1,60 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--beauty-landing-2-background);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__container {
+    position: relative;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    min-width: 0;
+  }
+
+  &__address-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__address-icon {
+    fill: var(--beauty-landing-2-c1);
+  }
+}

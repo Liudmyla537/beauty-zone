@@ -61,13 +61,74 @@
           </ul>
         </address>
 
-        <button class="header__burger" type="button">
+        <button class="header__burger" type="button" data-menu-open>
           <svg width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- #region Mobile-menu -->
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close" data-menu-close>
+          <svg class="mobile-menu__icon-close" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <a href="/">
+            <img class="logo" src="./images/logo.svg" alt="Логотип компанії Бьюти Зона">
+          </a>
+
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#about">Про нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#advantages">Чому ми</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#procedures">Наші процедури</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="link mobile-menu__link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+
+          <address class="mobile-menu__address">
+            <ul class="mobile-menu__address-list">
+              <li class="mobile-menu__address-item">
+                <a class="mobile-menu__address-link" href="#">
+                  <svg class="mobile-menu__address-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__address-item">
+                <a class="mobile-menur__address-link" href="#" target="_blank">
+                  <svg class="mobile-menu__address-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu__address-item">
+                <a class="mobile-menu__address-link" href="#" target="_blank">
+                  <svg class="mobile-menu__address-icon" width="32" height="32">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </nav>
+      </div>
+    </div>
+
+
+
+    <!-- #endregion -->
   </header>
 
   <!-- #endregion Header -->
@@ -355,8 +416,8 @@
         </div>
         <div class="form__field">
           <label class="form__label visually-hidden" for="tel">Ваш номер телефону</label>
-          <input class="form__input" type="tel" id="tel" name="tel" pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
-            title="+38-000-000-00-00" placeholder="Ваш номер телефону" required>
+          <input class="form__input" type="tel" id="tel" name="tel" pattern="^\+\d{2} \d{3} \d{3} \d{2} \d{2}$"
+            title="+38 000 000 00 00" placeholder="Ваш номер телефону" required>
         </div>
         <div class="form__field">
           <label class="form__label visually-hidden" for="email">Ваша електронна пошта</label>
@@ -378,6 +439,7 @@
 
   <script src="./js/procedures-slider.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 
 </body>
 

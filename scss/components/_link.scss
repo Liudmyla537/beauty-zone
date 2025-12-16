@@ -49,3 +49,15 @@
     }
   }
 }
+
+.mobile-menu {
+  &__link {
+    font-size: 14px;
+
+    &:hover {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--beauty-landing-2-s2);
+    }
+  }
+}
