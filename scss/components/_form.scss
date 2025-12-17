@@ -18,7 +18,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 356px;
-    height: 440px;
+    height: 460px;
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -111,6 +111,7 @@
     color: var(--beauty-landing-2-s5);
     width: min(90%, 205px);
     word-wrap: break-word;
+    padding-bottom: 16px;
   }
 
   &__link {
