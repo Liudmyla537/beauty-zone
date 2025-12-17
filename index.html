@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beauty zone</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -73,7 +73,7 @@
     <div class="mobile-menu" data-menu>
       <div class="mobile-menu__container">
         <button class="mobile-menu__close" data-menu-close>
-          <svg class="mobile-menu__icon-close" width="24" height="24">
+          <svg class="mobile-menu__icon--close" width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-menu-close"></use>
           </svg>
         </button>
@@ -98,24 +98,24 @@
           </ul>
 
           <address class="mobile-menu__address">
-            <ul class="mobile-menu__address-list">
-              <li class="mobile-menu__address-item">
-                <a class="mobile-menu__address-link" href="#">
+            <ul class="mobile-menu__address--list">
+              <li class="mobile-menu__address--item">
+                <a class="mobile-menu__address--link" href="#">
                   <svg class="mobile-menu__address-icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-telephone"></use>
                   </svg>
                 </a>
               </li>
-              <li class="mobile-menu__address-item">
-                <a class="mobile-menur__address-link" href="#" target="_blank">
-                  <svg class="mobile-menu__address-icon" width="32" height="32">
+              <li class="mobile-menu__address--item">
+                <a class="mobile-menur__address--link" href="#" target="_blank">
+                  <svg class="mobile-menu__address--icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="mobile-menu__address-item">
-                <a class="mobile-menu__address-link" href="#" target="_blank">
-                  <svg class="mobile-menu__address-icon" width="32" height="32">
+              <li class="mobile-menu__address--item">
+                <a class="mobile-menu__address--link" href="#" target="_blank">
+                  <svg class="mobile-menu__address--icon" width="32" height="32">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -168,10 +168,10 @@
           <div class="about__star"></div>
           <img class="about__image about__image--before"
             srcset="./images/before-facelift.jpg 1x, ./images/before-facelift@2x.jpg 2x"
-            src="./images/before-facelift.jpg" alt="Обличчя до процедури">
+            src="./images/before-facelift.jpg" width="227" height="227" alt="Обличчя до процедури">
           <img class="about__image about__image--after"
             srcset="./images/after-facelift.jpg 1x, ./images/after-facelift@2x.jpg 2x" src="./images/after-facelift.jpg"
-            alt="Обличчя після процедури">
+            width="227" height="227" alt="Обличчя після процедури">
         </div>
       </div>
     </div>
@@ -188,31 +188,31 @@
           <h2 class="advantages__title">Чому люди <span class="accent advantages__accent">обирають нас</span></h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <article class="advantages__card">
+              <div class="advantages__card">
                 <svg class="advantages__icon" width="48" height="48">
                   <use href="./images/symbol-defs.svg#icon-game"></use>
                 </svg>
                 <p class="advantages__text">Всі наші косметологи мають вищу медичну освіту
                   та стаж роботи від 5 років</p>
-              </article>
+              </div>
             </li>
             <li class="advantages__item">
-              <article class="advantages__card">
+              <div class="advantages__card">
                 <svg class="advantages__icon" width="52" height="52">
                   <use href="./images/symbol-defs.svg#icon-medicine"></use>
                 </svg>
                 <p class="advantages__text">Використовуємо тільки професійне обладнання та косметику, перевірену
                   часом</p>
-              </article>
+              </div>
             </li>
             <li class="advantages__item">
-              <article class="advantages__card">
+              <div class="advantages__card">
                 <svg class="advantages__icon" width="48" height="48">
                   <use href="./images/symbol-defs.svg#icon-crown"></use>
                 </svg>
                 <p class="advantages__text">Наша мета - підкреслити переваги та приховати недоліки, а не
                   переробити</p>
-              </article>
+              </div>
             </li>
           </ul>
         </div>
@@ -234,36 +234,43 @@
             <div class="procedures__card swiper">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                  <article class="procedures__item">
+                  <div class="procedures__item">
                     <div class="procedures__image-wrapper">
-                      <img class="procedures__image" src="./images/face-masks.jpg" alt="Маски для обличчя">
+                      <img class="procedures__image" srcset="./images/face-masks.jpg 1x, ./images/face-masks@2x.jpg 2x"
+                        src="./images/face-masks.jpg" alt="Жінці наносять маску на обличчя">
                       <p class="procedures__text">Маски<br>для обличчя</p>
                     </div>
-                  </article>
+                  </div>
                 </li>
                 <li class="swiper-slide">
-                  <article class="procedures__item">
+                  <div class="procedures__item">
                     <div class="procedures__image-wrapper">
-                      <img class="procedures__image" src="./images/facial-injections.jpg" alt="Ін'єкції для обличчя">
+                      <img class="procedures__image"
+                        srcset="./images/facial-injections.jpg 1x, ./images/facial-injections@2x.jpg 2x"
+                        src="./images/facial-injections.jpg" alt="Жінці роблять ін'єкції на обличчі">
                       <p class="procedures__text">Ін'єкції<br>для обличчя</p>
                     </div>
-                  </article>
+                  </div>
                 </li>
                 <li class="swiper-slide">
-                  <article class="procedures__item">
+                  <div class="procedures__item">
                     <div class="procedures__image-wrapper">
-                      <img class="procedures__image" src="./images/face-cleansing.jpg" alt="Очищення обличчя">
+                      <img class="procedures__image"
+                        srcset="./images/face-cleansing.jpg 1x, ./images/face-cleansing@2x.jpg 2x"
+                        src="./images/face-cleansing.jpg" alt="Жінці роблять чистку обличчя">
                       <p class="procedures__text">Очищення<br>обличчя</p>
                     </div>
-                  </article>
+                  </div>
                 </li>
                 <li class="swiper-slide">
-                  <article class="procedures__item">
+                  <div class="procedures__item">
                     <div class="procedures__image-wrapper">
-                      <img class="procedures__image" src="./images/facial-injections.jpg" alt="Ін'єкції для обличчя">
+                      <img class="procedures__image"
+                        srcset="./images/facial-injections.jpg 1x, ./images/facial-injections@2x.jpg 2x"
+                        src="./images/facial-injections.jpg" alt="Ін'єкції для обличчя">
                       <p class="procedures__text">Ін'єкції<br>для обличчя</p>
                     </div>
-                  </article>
+                  </div>
                 </li>
               </ul>
               <div class="pagination">
@@ -291,10 +298,11 @@
     <div class="container">
       <div class="contacts__container">
         <div class="contacts__form">
-          <h2 class="contacts__title">Як нас <span class="contacts__accent">знайти</span></h2>
+          <h2 class="contacts__title">Як нас <span class="accent contacts__accent">знайти</span></h2>
           <div class="contacts__form-map">
             <form class="form" name="contact-form" autocomplete="off">
-              <h3 class="form__title">Запишіться <span class="form__accent">безкоштовно</span> та отримайте подарунок
+              <h3 class="form__title">Запишіться <span class=" accent form__accent">безкоштовно</span> та отримайте
+                подарунок
               </h3>
               <div class="form__field">
                 <label class="form__label visually-hidden" for="name">Ваше ім'я та прізвище</label>
@@ -340,45 +348,45 @@
             </a>
           </div>
           <ul class="footer__menu">
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="#about">Про нас</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="#advantages">Чому ми</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="#procedures">Наші процедури</a></li>
-            <li class="footer__menu-item"><a class="link footer__menu-link" href="#contacts">Контакти</a></li>
+            <li class="footer__menu--item"><a class="link footer__menu--link" href="#about">Про нас</a></li>
+            <li class="footer__menu--item"><a class="link footer__menu--link" href="#advantages">Чому ми</a></li>
+            <li class="footer__menu--item"><a class="link footer__menu--link" href="#procedures">Наші процедури</a></li>
+            <li class="footer__menu--item"><a class="link footer__menu--link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
         <address class="footer__address">
-          <ul class="footer__address-list">
-            <li class="footer__address-item">
-              <a class="footer__address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+          <ul class="footer__address--list">
+            <li class="footer__address--item">
+              <a class="footer__address--link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
-            <li class="footer__address-item">
-              <a class="footer__address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <li class="footer__address--item">
+              <a class="footer__address--link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
             </li>
-            <li class="footer__address-item">
-              <a class="footer__address-link" href="https://maps.app.goo.gl/XE4TH8DFiXhNYTVu8" target="_blank">Україна,
+            <li class="footer__address--item">
+              <a class="footer__address--link" href="https://maps.app.goo.gl/XE4TH8DFiXhNYTVu8" target="_blank">Україна,
                 м. Київ,<br>вул. Тараса Шевченка 5</a>
             </li>
           </ul>
 
           <div class="footer__social">
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
+            <ul class="footer__social--list">
+              <li class="footer__social--item">
                 <a href="#">
-                  <svg class="footer__social-icon" width="42" height="42">
+                  <svg class="footer__social--icon" width="42" height="42">
                     <use href="./images/symbol-defs.svg#icon-telephone"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__social-item">
+              <li class="footer__social--item">
                 <a href="https://www.facebook.com/login/?locale=ru_RU" target="_blank">
-                  <svg class="footer__social-icon" width="42" height="42">
+                  <svg class="footer__social--icon" width="42" height="42">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__social-item">
+              <li class="footer__social--item">
                 <a href="https://www.instagram.com/" target="_blank">
-                  <svg class="footer__social-icon" width="42" height="42">
+                  <svg class="footer__social--icon" width="42" height="42">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -387,9 +395,9 @@
           </div>
 
         </address>
-        <div class="footer__address-info">
-          <a class="link footer__address-link" href="" target="_blank">Політика конфіденційності</a>
-          <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+        <div class="footer__address--info">
+          <a class="link footer__address--link" href="" target="_blank">Політика конфіденційності</a>
+          <p class="footer__address--copyright">&copy; 2022 Дані захищені</p>
         </div>
       </div>
     </div>
@@ -398,30 +406,31 @@
   <!-- #region Modal -->
   <div class="backdrop" data-modal>
     <div class="modal">
-      <button class="modal__close-btn" type="button" data-modal-close>
-        <svg class="modal__close-icon" width="32" height="32">
+      <button class="modal__close--btn" type="button" data-modal-close>
+        <svg class="modal__close--icon" width="32" height="32">
           <use href="./images/symbol-defs.svg#icon-modal-close"></use>
         </svg>
       </button>
       <h2 class="modal__title">Замовити дзвінок</h2>
 
       <form class="modal__form" name="modal-form">
-        <h3 class="modal__form-title">Запишіться <span class="form__accent">безкоштовно</span> та отримайте подарунок
+        <h3 class="modal__form--title">Запишіться <span class=" accent form__accent">безкоштовно</span> та отримайте
+          подарунок
         </h3>
         <div class="form__field">
-          <label class="form__label visually-hidden" for="name">Ваше ім'я та прізвище</label>
-          <input class="form__input" type="text" id="name" name="name"
+          <label class="form__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+          <input class="form__input" type="text" id="user-name" name="user-name"
             pattern="^[А-ЯҐЄІЇОУ][а-яґєіїоу']*\s[А-ЯҐЄІЇОУ][а-яґєіїоу']*$" title="Іван Іванов"
             placeholder="Ваше ім'я та прізвище" required>
         </div>
         <div class="form__field">
-          <label class="form__label visually-hidden" for="tel">Ваш номер телефону</label>
-          <input class="form__input" type="tel" id="tel" name="tel" pattern="^\+\d{2} \d{3} \d{3} \d{2} \d{2}$"
-            title="+38 000 000 00 00" placeholder="Ваш номер телефону" required>
+          <label class="form__label visually-hidden" for="user-tel">Ваш номер телефону</label>
+          <input class="form__input" type="tel" id="user-tel" name="user-tel" pattern="^\+\d{2}\d{3}\d{3}\d{2}\d{2}$"
+            title="+380632223322" placeholder="Ваш номер телефону" required>
         </div>
         <div class="form__field">
-          <label class="form__label visually-hidden" for="email">Ваша електронна пошта</label>
-          <input class="form__input" type="email" id="email" name="email"
+          <label class="form__label visually-hidden" for="user-email">Ваша електронна пошта</label>
+          <input class="form__input" type="email" id="user-email" name="user-email"
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}" title="usermail@gmail.com"
             placeholder="Ваша електронна пошта" required>
         </div>

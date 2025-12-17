@@ -17,7 +17,7 @@
 }
 
 .footer {
-  &__menu-link {
+  &__menu--link {
     display: block;
     color: var(--beauty-landing-2-background);
     text-align: center;
@@ -31,7 +31,7 @@
       font-size: 16px;
     }
   }
-  &__address-link {
+  &__address--link {
     font-weight: 400;
     font-size: 14px;
     color: var(--beauty-landing-2-background);

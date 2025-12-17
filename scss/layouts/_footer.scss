@@ -21,6 +21,10 @@
       background-image: url(../images/footer-photo.png);
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include retina {
+        background-image: url(../images/footer-photo@2x.png);
+      }
     }
   }
 
@@ -54,7 +58,7 @@
     }
   }
 
-  &__menu-item {
+  &__menu--item {
     margin-bottom: 16px;
 
     &:last-child {
@@ -62,7 +66,7 @@
     }
   }
 
-  &__address-list {
+  &__address--list {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -72,12 +76,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    &__address-item {
+    &__address--item {
       margin-bottom: 16px;
     }
   }
 
-  &__social-list {
+  &__social--list {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -89,7 +93,7 @@
     }
   }
 
-  &__social-icon {
+  &__social--icon {
     fill: var(--beauty-landing-2-background);
     width: 32px;
     height: 32px;
@@ -108,11 +112,11 @@
     }
   }
 
-  &__address-info {
+  &__address--info {
     text-align: center;
   }
 
-  &__address-copyright {
+  &__address--copyright {
     color: var(--beauty-landing-2-s5);
     font-style: normal;
     font-weight: 400;

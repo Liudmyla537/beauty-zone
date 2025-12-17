@@ -2,6 +2,8 @@
 @import './utils/reset';
 @import './utils/utils.scss';
 @import './base';
+@import './utils/accent';
+@import './mixins/retina';
 
 @import './components/button';
 @import './components/container';

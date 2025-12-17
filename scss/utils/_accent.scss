@@ -1,0 +1,14 @@
+.accent {
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--beauty-landing-2-s2);
+}
+
+.advantages,
+.contacts,
+.form,
+.procedures {
+  &__accent {
+    text-transform: lowercase;
+  }
+}

@@ -1,55 +1,31 @@
 .about {
   position: relative;
 
-  &__card {
-    display: none;
-  }
-
-  &__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.1;
-    margin-bottom: 24px;
-    width: 255px;
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 18px;
-
-    &--first {
-      margin-bottom: 16px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 20px;
-    bottom: -50px;
-    background-image: url(../images/star-dark-blue.svg);
-    width: 30px;
-    height: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: -50px;
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: -50px;
-
     &__container {
       display: flex;
       gap: 32px;
     }
+  }
 
+  @media screen and (min-width: 768px) {
     &__content {
       width: 415px;
-    }
 
-    &__title {
-      padding-top: 20px;
-      width: 100%;
+      @media screen and (min-width: 1280px) {
+        width: 660px;
+      }
     }
+  }
 
-    &__card {
+  &__card {
+    display: none;
+
+    @media screen and (min-width: 768px) {
       position: relative;
       display: flex;
       flex-direction: column;
@@ -59,7 +35,7 @@
       width: 300px;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 10%;
         right: 8%;
@@ -69,7 +45,7 @@
       }
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 53%;
         right: 54%;
@@ -80,59 +56,7 @@
       }
     }
 
-    &__image {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-
-      &--after {
-        align-self: flex-end;
-      }
-
-      &--before {
-        position: relative;
-      }
-    }
-
-    &__star {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 35%;
-        left: 85%;
-        background-image: url(../images/star-grey.svg);
-        width: 15px;
-        height: 15px;
-      }
-    }
-
-    &::after {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    &__content {
-      width: 660px;
-    }
-
-    &__title {
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 1.1;
-      margin-bottom: 40px;
-    }
-
-    &__text {
-      font-size: 22px;
-      line-height: 1.72;
-
-      &--first {
-        margin-bottom: 40px;
-      }
-    }
-
-    &__card {
+    @media screen and (min-width: 1280px) {
       width: 400px;
       gap: 40px;
 
@@ -146,23 +70,95 @@
         height: 56px;
       }
     }
+  }
 
-    &__image {
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    width: 255px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+
+    &--first {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 22px;
+      line-height: 1.72;
+
+      &--first {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+    background-image: url(../images/star-dark-blue.svg);
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    &--after {
+      align-self: flex-end;
+    }
+
+    &--before {
+      position: relative;
+    }
+
+    @media screen and (min-width: 1280px) {
       width: 227px;
       height: 227px;
     }
+  }
 
-    &__star {
+  &__star {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 85%;
+      background-image: url(../images/star-grey.svg);
+      width: 15px;
+      height: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
       &::after {
         width: 16px;
         height: 16px;
       }
     }
   }
-}
-
-.accent.about__accent {
-  text-transform: capitalize;
-  font-weight: 700;
-  color: var(--beauty-landing-2-s2);
 }

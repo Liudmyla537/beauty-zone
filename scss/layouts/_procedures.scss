@@ -51,6 +51,7 @@
       }
     }
   }
+
   &__icon {
     fill: currentColor;
   }
@@ -119,9 +120,4 @@
     color: var(--beauty-landing-2-background);
     padding-bottom: 24px;
   }
-}
-
-.accent.procedures__accent {
-  font-weight: 700;
-  color: var(--beauty-landing-2-s2);
 }

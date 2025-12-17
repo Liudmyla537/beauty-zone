@@ -45,7 +45,7 @@
     min-width: 0;
   }
 
-  &__address-list {
+  &__address--list {
     display: flex;
     gap: 16px;
   }
@@ -54,7 +54,7 @@
     margin-bottom: 16px;
   }
 
-  &__address-icon {
+  &__address--icon {
     fill: var(--beauty-landing-2-c1);
   }
 }

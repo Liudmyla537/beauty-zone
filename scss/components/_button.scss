@@ -56,7 +56,7 @@
 }
 
 .modal {
-  &__close-btn {
+  &__close--btn {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -76,7 +76,7 @@
     }
   }
 
-  &__close-icon {
+  &__close--icon {
     width: 24px;
     height: 24px;
     stroke: currentColor;

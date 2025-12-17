@@ -2,19 +2,55 @@
   position: relative;
   padding-top: 71px;
   padding-bottom: 60px;
-  background-image: url(../images/hero-background-mob.png),
-    url(../images/hero-background-mob@2x.png);
+  background-image: url(../images/hero-background-mob.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   overflow: hidden;
 
+  @include retina {
+    background-image: url(../images/hero-background-mob@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: url(../images/hero-background-desk.png);
+
+    @include retina {
+      background-image: url(../images/hero-background-desk@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 687px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      max-width: 330px;
+      margin-left: 50px;
+    }
+  }
+
   &__text {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+    }
   }
 
   &__title {
@@ -26,6 +62,17 @@
     text-align: center;
     color: var(--beauty-landing-2-s2);
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 70px;
+      margin-bottom: 40px;
+      line-height: 0.81;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 140px;
+    }
   }
 
   &__subtitle {
@@ -36,51 +83,12 @@
     color: var(--beauty-landing-2-c3);
     width: 186px;
     margin: 0 auto;
-  }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 125px;
-    padding-bottom: 125px;
-    background-image: url(../images/hero-background-desk.png),
-      url(../images/hero-background-desk@2x.png);
-
-    &__container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      max-width: 330px;
-      margin-left: 50px;
-    }
-
-    &__text {
-      margin-bottom: 16px;
-    }
-
-    &__title {
-      font-size: 70px;
-      margin-bottom: 40px;
-      line-height: 0.81;
-      text-align: left;
-    }
-
-    &__subtitle {
+    @media screen and (min-width: 768px) {
       margin: 0;
     }
-  }
 
-  @media screen and (min-width: 1280px) {
-    min-height: 687px;
-
-    &__text {
-      font-size: 18px;
-    }
-
-    &__title {
-      font-size: 140px;
-    }
-
-    &__subtitle {
+    @media screen and (min-width: 1280px) {
       font-size: 12px;
       line-height: 1.5;
       width: 238px;

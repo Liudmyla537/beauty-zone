@@ -19,6 +19,15 @@
   padding-top: 100px;
   padding-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 175px;
+    padding-bottom: 48px;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 32px;
@@ -26,6 +35,18 @@
     text-align: center;
     margin: 0 auto 24px;
     max-width: 300px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+      margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+      max-width: 532px;
+    }
   }
 
   &__list {
@@ -33,6 +54,15 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 56px;
+    }
   }
 
   &__item {
@@ -41,6 +71,11 @@
       0 4px 4px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: var(--beauty-landing-2-background);
     padding: 12px 24px;
+
+    @media screen and (min-width: 1280px) {
+      border-radius: 32px;
+      padding: 24px 32px;
+    }
   }
 
   &__card {
@@ -55,56 +90,15 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
-  }
 
-  @media screen and (min-width: 768px) {
-    padding-bottom: 24px;
-
-    &__title {
-      padding-top: 20px;
-      margin-bottom: 48px;
-    }
-
-    &__list {
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    &__text {
-      font-weight: 400;
+    @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.1;
     }
-  }
 
-  @media screen and (min-width: 1280px) {
-    padding-top: 175px;
-    padding-bottom: 48px;
-
-    &__title {
-      font-weight: 700;
-      font-size: 64px;
-      margin-bottom: 48px;
-      max-width: 532px;
-    }
-
-    &__list {
-      gap: 56px;
-    }
-
-    &__item {
-      border-radius: 32px;
-      padding: 24px 32px;
-    }
-
-    &__text {
+    @media screen and (min-width: 1280px) {
       font-size: 18px;
       line-height: 1.3;
     }
   }
-}
-
-.accent.advantages__accent {
-  font-weight: 700;
-  color: var(--beauty-landing-2-s2);
 }

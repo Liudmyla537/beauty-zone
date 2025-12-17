@@ -12,10 +12,10 @@
   visibility: hidden;
   pointer-events: none;
   z-index: 100;
-}
 
-.backdrop.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
