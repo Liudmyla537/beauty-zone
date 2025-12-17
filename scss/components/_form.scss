@@ -109,7 +109,8 @@
     line-height: 1.5;
     text-align: center;
     color: var(--beauty-landing-2-s5);
-    width: 205px;
+    width: min(90%, 205px);
+    word-wrap: break-word;
   }
 
   &__link {
